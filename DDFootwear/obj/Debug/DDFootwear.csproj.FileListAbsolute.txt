@@ -1,0 +1,48 @@
+C:\Users\Tharindu Lakshan\OneDrive\Documents\Visual Studio 2015\Projects\DDFootwear\DDFootwear\obj\Debug\DDFootwear.csprojResolveAssemblyReference.cache
+C:\Users\Tharindu Lakshan\OneDrive\Documents\Visual Studio 2015\Projects\DDFootwear\DDFootwear\bin\roslyn\csc.exe
+C:\Users\Tharindu Lakshan\OneDrive\Documents\Visual Studio 2015\Projects\DDFootwear\DDFootwear\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Tharindu Lakshan\OneDrive\Documents\Visual Studio 2015\Projects\DDFootwear\DDFootwear\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Tharindu Lakshan\OneDrive\Documents\Visual Studio 2015\Projects\DDFootwear\DDFootwear\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Tharindu Lakshan\OneDrive\Documents\Visual Studio 2015\Projects\DDFootwear\DDFootwear\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Tharindu Lakshan\OneDrive\Documents\Visual Studio 2015\Projects\DDFootwear\DDFootwear\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Tharindu Lakshan\OneDrive\Documents\Visual Studio 2015\Projects\DDFootwear\DDFootwear\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Tharindu Lakshan\OneDrive\Documents\Visual Studio 2015\Projects\DDFootwear\DDFootwear\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Tharindu Lakshan\OneDrive\Documents\Visual Studio 2015\Projects\DDFootwear\DDFootwear\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Tharindu Lakshan\OneDrive\Documents\Visual Studio 2015\Projects\DDFootwear\DDFootwear\bin\roslyn\vbc.exe
+C:\Users\Tharindu Lakshan\OneDrive\Documents\Visual Studio 2015\Projects\DDFootwear\DDFootwear\bin\roslyn\VBCSCompiler.exe
+C:\Users\Tharindu Lakshan\OneDrive\Documents\Visual Studio 2015\Projects\DDFootwear\DDFootwear\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Tharindu Lakshan\OneDrive\Documents\Visual Studio 2015\Projects\DDFootwear\DDFootwear\bin\DDFootwear.dll.config
+C:\Users\Tharindu Lakshan\OneDrive\Documents\Visual Studio 2015\Projects\DDFootwear\DDFootwear\bin\DDFootwear.dll
+C:\Users\Tharindu Lakshan\OneDrive\Documents\Visual Studio 2015\Projects\DDFootwear\DDFootwear\bin\DDFootwear.pdb
+C:\Users\Tharindu Lakshan\OneDrive\Documents\Visual Studio 2015\Projects\DDFootwear\DDFootwear\bin\BBL.dll
+C:\Users\Tharindu Lakshan\OneDrive\Documents\Visual Studio 2015\Projects\DDFootwear\DDFootwear\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Tharindu Lakshan\OneDrive\Documents\Visual Studio 2015\Projects\DDFootwear\DDFootwear\bin\DAL.dll
+C:\Users\Tharindu Lakshan\OneDrive\Documents\Visual Studio 2015\Projects\DDFootwear\DDFootwear\bin\BBL.pdb
+C:\Users\Tharindu Lakshan\OneDrive\Documents\Visual Studio 2015\Projects\DDFootwear\DDFootwear\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Tharindu Lakshan\OneDrive\Documents\Visual Studio 2015\Projects\DDFootwear\DDFootwear\bin\DAL.pdb
+C:\Users\Tharindu Lakshan\OneDrive\Documents\Visual Studio 2015\Projects\DDFootwear\DDFootwear\obj\Debug\DDFootwear.dll
+C:\Users\Tharindu Lakshan\OneDrive\Documents\Visual Studio 2015\Projects\DDFootwear\DDFootwear\obj\Debug\DDFootwear.pdb
+C:\Users\Tharindu Lakshan\Desktop\SOP\DDFootwear\DDFootwear\bin\roslyn\csc.exe
+C:\Users\Tharindu Lakshan\Desktop\SOP\DDFootwear\DDFootwear\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Tharindu Lakshan\Desktop\SOP\DDFootwear\DDFootwear\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Tharindu Lakshan\Desktop\SOP\DDFootwear\DDFootwear\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Tharindu Lakshan\Desktop\SOP\DDFootwear\DDFootwear\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Tharindu Lakshan\Desktop\SOP\DDFootwear\DDFootwear\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Tharindu Lakshan\Desktop\SOP\DDFootwear\DDFootwear\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Tharindu Lakshan\Desktop\SOP\DDFootwear\DDFootwear\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Tharindu Lakshan\Desktop\SOP\DDFootwear\DDFootwear\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Tharindu Lakshan\Desktop\SOP\DDFootwear\DDFootwear\bin\roslyn\vbc.exe
+C:\Users\Tharindu Lakshan\Desktop\SOP\DDFootwear\DDFootwear\bin\roslyn\VBCSCompiler.exe
+C:\Users\Tharindu Lakshan\Desktop\SOP\DDFootwear\DDFootwear\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Tharindu Lakshan\Desktop\SOP\DDFootwear\DDFootwear\bin\DDFootwear.dll.config
+C:\Users\Tharindu Lakshan\Desktop\SOP\DDFootwear\DDFootwear\bin\DDFootwear.dll
+C:\Users\Tharindu Lakshan\Desktop\SOP\DDFootwear\DDFootwear\bin\DDFootwear.pdb
+C:\Users\Tharindu Lakshan\Desktop\SOP\DDFootwear\DDFootwear\bin\BBL.dll
+C:\Users\Tharindu Lakshan\Desktop\SOP\DDFootwear\DDFootwear\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Tharindu Lakshan\Desktop\SOP\DDFootwear\DDFootwear\bin\DAL.dll
+C:\Users\Tharindu Lakshan\Desktop\SOP\DDFootwear\DDFootwear\bin\BBL.pdb
+C:\Users\Tharindu Lakshan\Desktop\SOP\DDFootwear\DDFootwear\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Tharindu Lakshan\Desktop\SOP\DDFootwear\DDFootwear\bin\DAL.pdb
+C:\Users\Tharindu Lakshan\Desktop\SOP\DDFootwear\DDFootwear\obj\Debug\DDFootwear.csprojResolveAssemblyReference.cache
+C:\Users\Tharindu Lakshan\Desktop\SOP\DDFootwear\DDFootwear\obj\Debug\DDFootwear.dll
+C:\Users\Tharindu Lakshan\Desktop\SOP\DDFootwear\DDFootwear\obj\Debug\DDFootwear.pdb

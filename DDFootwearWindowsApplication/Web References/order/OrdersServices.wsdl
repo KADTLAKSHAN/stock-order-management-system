@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="insertOrder">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="oID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="oDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="dis" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="insertOrderResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="insertOrderResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="orderProduct">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="qty" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="oID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="usermail" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stockID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="orderProductResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="orderProductResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="calculateBill">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="qty" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="calculateBillResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="calculateBillResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DiscountCalculation">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="oID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="total" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DiscountCalculationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DiscountCalculationResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="insertOrderSoapIn">
+    <wsdl:part name="parameters" element="tns:insertOrder" />
+  </wsdl:message>
+  <wsdl:message name="insertOrderSoapOut">
+    <wsdl:part name="parameters" element="tns:insertOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="orderProductSoapIn">
+    <wsdl:part name="parameters" element="tns:orderProduct" />
+  </wsdl:message>
+  <wsdl:message name="orderProductSoapOut">
+    <wsdl:part name="parameters" element="tns:orderProductResponse" />
+  </wsdl:message>
+  <wsdl:message name="calculateBillSoapIn">
+    <wsdl:part name="parameters" element="tns:calculateBill" />
+  </wsdl:message>
+  <wsdl:message name="calculateBillSoapOut">
+    <wsdl:part name="parameters" element="tns:calculateBillResponse" />
+  </wsdl:message>
+  <wsdl:message name="DiscountCalculationSoapIn">
+    <wsdl:part name="parameters" element="tns:DiscountCalculation" />
+  </wsdl:message>
+  <wsdl:message name="DiscountCalculationSoapOut">
+    <wsdl:part name="parameters" element="tns:DiscountCalculationResponse" />
+  </wsdl:message>
+  <wsdl:portType name="OrdersServicesSoap">
+    <wsdl:operation name="insertOrder">
+      <wsdl:input message="tns:insertOrderSoapIn" />
+      <wsdl:output message="tns:insertOrderSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="orderProduct">
+      <wsdl:input message="tns:orderProductSoapIn" />
+      <wsdl:output message="tns:orderProductSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="calculateBill">
+      <wsdl:input message="tns:calculateBillSoapIn" />
+      <wsdl:output message="tns:calculateBillSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DiscountCalculation">
+      <wsdl:input message="tns:DiscountCalculationSoapIn" />
+      <wsdl:output message="tns:DiscountCalculationSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="OrdersServicesSoap" type="tns:OrdersServicesSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="insertOrder">
+      <soap:operation soapAction="http://tempuri.org/insertOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="orderProduct">
+      <soap:operation soapAction="http://tempuri.org/orderProduct" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="calculateBill">
+      <soap:operation soapAction="http://tempuri.org/calculateBill" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DiscountCalculation">
+      <soap:operation soapAction="http://tempuri.org/DiscountCalculation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="OrdersServicesSoap12" type="tns:OrdersServicesSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="insertOrder">
+      <soap12:operation soapAction="http://tempuri.org/insertOrder" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="orderProduct">
+      <soap12:operation soapAction="http://tempuri.org/orderProduct" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="calculateBill">
+      <soap12:operation soapAction="http://tempuri.org/calculateBill" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DiscountCalculation">
+      <soap12:operation soapAction="http://tempuri.org/DiscountCalculation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="OrdersServices">
+    <wsdl:port name="OrdersServicesSoap" binding="tns:OrdersServicesSoap">
+      <soap:address location="http://localhost:63251/OrdersServices.asmx" />
+    </wsdl:port>
+    <wsdl:port name="OrdersServicesSoap12" binding="tns:OrdersServicesSoap12">
+      <soap12:address location="http://localhost:63251/OrdersServices.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

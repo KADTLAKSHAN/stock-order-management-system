@@ -1,0 +1,8 @@
+C:\Users\Tharindu Lakshan\OneDrive\Documents\Visual Studio 2015\Projects\DDFootwear\DAL\bin\Debug\DAL.dll
+C:\Users\Tharindu Lakshan\OneDrive\Documents\Visual Studio 2015\Projects\DDFootwear\DAL\bin\Debug\DAL.pdb
+C:\Users\Tharindu Lakshan\OneDrive\Documents\Visual Studio 2015\Projects\DDFootwear\DAL\obj\Debug\DAL.dll
+C:\Users\Tharindu Lakshan\OneDrive\Documents\Visual Studio 2015\Projects\DDFootwear\DAL\obj\Debug\DAL.pdb
+C:\Users\Tharindu Lakshan\Desktop\SOP\DDFootwear\DAL\bin\Debug\DAL.dll
+C:\Users\Tharindu Lakshan\Desktop\SOP\DDFootwear\DAL\bin\Debug\DAL.pdb
+C:\Users\Tharindu Lakshan\Desktop\SOP\DDFootwear\DAL\obj\Debug\DAL.dll
+C:\Users\Tharindu Lakshan\Desktop\SOP\DDFootwear\DAL\obj\Debug\DAL.pdb

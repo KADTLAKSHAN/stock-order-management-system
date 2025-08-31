@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="DDFootwear.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="DDFootwear_sizes_Size" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:63251/Size.asmx</Value>
+    </Setting>
+    <Setting Name="DDFootwear_product_ProductService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:63251/ProductService.asmx</Value>
+    </Setting>
+    <Setting Name="DDFootwear_discount_DiscountService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:63251/DiscountService.asmx</Value>
+    </Setting>
+    <Setting Name="DDFootwear_user_Userservices" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:63251/Userservices.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

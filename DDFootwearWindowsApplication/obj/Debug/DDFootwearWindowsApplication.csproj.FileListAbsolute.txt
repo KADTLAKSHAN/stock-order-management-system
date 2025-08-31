@@ -1,0 +1,38 @@
+C:\Users\Tharindu Lakshan\OneDrive\Documents\Visual Studio 2015\Projects\DDFootwear\DDFootwearWindowsApplication\bin\Debug\DDFootwearWindowsApplication.exe.config
+C:\Users\Tharindu Lakshan\OneDrive\Documents\Visual Studio 2015\Projects\DDFootwear\DDFootwearWindowsApplication\obj\Debug\DDFootwearWindowsApplication.CheckDDMainStock.resources
+C:\Users\Tharindu Lakshan\OneDrive\Documents\Visual Studio 2015\Projects\DDFootwear\DDFootwearWindowsApplication\obj\Debug\DDFootwearWindowsApplication.Login.resources
+C:\Users\Tharindu Lakshan\OneDrive\Documents\Visual Studio 2015\Projects\DDFootwear\DDFootwearWindowsApplication\obj\Debug\DDFootwearWindowsApplication.OutletMenucs.resources
+C:\Users\Tharindu Lakshan\OneDrive\Documents\Visual Studio 2015\Projects\DDFootwear\DDFootwearWindowsApplication\obj\Debug\DDFootwearWindowsApplication.Properties.Resources.resources
+C:\Users\Tharindu Lakshan\OneDrive\Documents\Visual Studio 2015\Projects\DDFootwear\DDFootwearWindowsApplication\obj\Debug\DDFootwearWindowsApplication.csproj.GenerateResource.Cache
+C:\Users\Tharindu Lakshan\OneDrive\Documents\Visual Studio 2015\Projects\DDFootwear\DDFootwearWindowsApplication\bin\Debug\DDFootwearWindowsApplication.exe
+C:\Users\Tharindu Lakshan\OneDrive\Documents\Visual Studio 2015\Projects\DDFootwear\DDFootwearWindowsApplication\bin\Debug\DDFootwearWindowsApplication.pdb
+C:\Users\Tharindu Lakshan\OneDrive\Documents\Visual Studio 2015\Projects\DDFootwear\DDFootwearWindowsApplication\obj\Debug\DDFootwearWindowsApplication.exe
+C:\Users\Tharindu Lakshan\OneDrive\Documents\Visual Studio 2015\Projects\DDFootwear\DDFootwearWindowsApplication\obj\Debug\DDFootwearWindowsApplication.pdb
+C:\Users\Tharindu Lakshan\OneDrive\Documents\Visual Studio 2015\Projects\DDFootwear\DDFootwearWindowsApplication\obj\Debug\DDFootwearWindowsApplication.csprojResolveAssemblyReference.cache
+C:\Users\Tharindu Lakshan\OneDrive\Documents\Visual Studio 2015\Projects\DDFootwear\DDFootwearWindowsApplication\obj\Debug\DDFootwearWindowsApplication.ManageOrders.resources
+C:\Users\Tharindu Lakshan\OneDrive\Documents\Visual Studio 2015\Projects\DDFootwear\DDFootwearWindowsApplication\obj\Debug\DDFootwearWindowsApplication.Order.resources
+C:\Users\Tharindu Lakshan\OneDrive\Documents\Visual Studio 2015\Projects\DDFootwear\DDFootwearWindowsApplication\bin\Debug\BBL.dll
+C:\Users\Tharindu Lakshan\OneDrive\Documents\Visual Studio 2015\Projects\DDFootwear\DDFootwearWindowsApplication\bin\Debug\DAL.dll
+C:\Users\Tharindu Lakshan\OneDrive\Documents\Visual Studio 2015\Projects\DDFootwear\DDFootwearWindowsApplication\bin\Debug\BBL.pdb
+C:\Users\Tharindu Lakshan\OneDrive\Documents\Visual Studio 2015\Projects\DDFootwear\DDFootwearWindowsApplication\bin\Debug\DAL.pdb
+C:\Users\Tharindu Lakshan\Desktop\SOP\DDFootwear\DDFootwearWindowsApplication\obj\Debug\DDFootwearWindowsApplication.csprojResolveAssemblyReference.cache
+C:\Users\Tharindu Lakshan\Desktop\SOP\DDFootwear\DDFootwearWindowsApplication\obj\Debug\DDFootwearWindowsApplication.CheckDDMainStock.resources
+C:\Users\Tharindu Lakshan\Desktop\SOP\DDFootwear\DDFootwearWindowsApplication\obj\Debug\DDFootwearWindowsApplication.Login.resources
+C:\Users\Tharindu Lakshan\Desktop\SOP\DDFootwear\DDFootwearWindowsApplication\obj\Debug\DDFootwearWindowsApplication.ManageOrders.resources
+C:\Users\Tharindu Lakshan\Desktop\SOP\DDFootwear\DDFootwearWindowsApplication\obj\Debug\DDFootwearWindowsApplication.Order.resources
+C:\Users\Tharindu Lakshan\Desktop\SOP\DDFootwear\DDFootwearWindowsApplication\obj\Debug\DDFootwearWindowsApplication.OutletMenucs.resources
+C:\Users\Tharindu Lakshan\Desktop\SOP\DDFootwear\DDFootwearWindowsApplication\obj\Debug\DDFootwearWindowsApplication.Properties.Resources.resources
+C:\Users\Tharindu Lakshan\Desktop\SOP\DDFootwear\DDFootwearWindowsApplication\obj\Debug\DDFootwearWindowsApplication.csproj.GenerateResource.Cache
+C:\Users\Tharindu Lakshan\Desktop\SOP\DDFootwear\DDFootwearWindowsApplication\bin\Debug\DDFootwearWindowsApplication.exe.config
+C:\Users\Tharindu Lakshan\Desktop\SOP\DDFootwear\DDFootwearWindowsApplication\bin\Debug\DDFootwearWindowsApplication.exe
+C:\Users\Tharindu Lakshan\Desktop\SOP\DDFootwear\DDFootwearWindowsApplication\bin\Debug\DDFootwearWindowsApplication.pdb
+C:\Users\Tharindu Lakshan\Desktop\SOP\DDFootwear\DDFootwearWindowsApplication\bin\Debug\BBL.dll
+C:\Users\Tharindu Lakshan\Desktop\SOP\DDFootwear\DDFootwearWindowsApplication\bin\Debug\DAL.dll
+C:\Users\Tharindu Lakshan\Desktop\SOP\DDFootwear\DDFootwearWindowsApplication\bin\Debug\BBL.pdb
+C:\Users\Tharindu Lakshan\Desktop\SOP\DDFootwear\DDFootwearWindowsApplication\bin\Debug\DAL.pdb
+C:\Users\Tharindu Lakshan\Desktop\SOP\DDFootwear\DDFootwearWindowsApplication\obj\Debug\DDFootwearWindowsApplication.exe
+C:\Users\Tharindu Lakshan\Desktop\SOP\DDFootwear\DDFootwearWindowsApplication\obj\Debug\DDFootwearWindowsApplication.pdb
+C:\Users\Tharindu Lakshan\Desktop\SOP\DDFootwear\DDFootwearWindowsApplication\obj\Debug\DDFootwearWindowsApplication.CheckOrder.resources
+C:\Users\Tharindu Lakshan\Desktop\SOP\DDFootwear\DDFootwearWindowsApplication\obj\Debug\DDFootwearWindowsApplication.OutletStock.resources
+C:\Users\Tharindu Lakshan\Desktop\SOP\DDFootwear\DDFootwearWindowsApplication\obj\Debug\DDFootwearWindowsApplication.PartnerStock.resources
+C:\Users\Tharindu Lakshan\Desktop\SOP\DDFootwear\DDFootwearWindowsApplication\obj\Debug\DDFootwearWindowsApplication.TrustInfo.xml

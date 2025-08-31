@@ -1,0 +1,14 @@
+C:\Users\Tharindu Lakshan\OneDrive\Documents\Visual Studio 2015\Projects\DDFootwear\BBL\bin\Debug\BBL.dll
+C:\Users\Tharindu Lakshan\OneDrive\Documents\Visual Studio 2015\Projects\DDFootwear\BBL\bin\Debug\BBL.pdb
+C:\Users\Tharindu Lakshan\OneDrive\Documents\Visual Studio 2015\Projects\DDFootwear\BBL\bin\Debug\DAL.dll
+C:\Users\Tharindu Lakshan\OneDrive\Documents\Visual Studio 2015\Projects\DDFootwear\BBL\bin\Debug\DAL.pdb
+C:\Users\Tharindu Lakshan\OneDrive\Documents\Visual Studio 2015\Projects\DDFootwear\BBL\obj\Debug\BBL.csprojResolveAssemblyReference.cache
+C:\Users\Tharindu Lakshan\OneDrive\Documents\Visual Studio 2015\Projects\DDFootwear\BBL\obj\Debug\BBL.dll
+C:\Users\Tharindu Lakshan\OneDrive\Documents\Visual Studio 2015\Projects\DDFootwear\BBL\obj\Debug\BBL.pdb
+C:\Users\Tharindu Lakshan\Desktop\SOP\DDFootwear\BBL\bin\Debug\BBL.dll
+C:\Users\Tharindu Lakshan\Desktop\SOP\DDFootwear\BBL\bin\Debug\BBL.pdb
+C:\Users\Tharindu Lakshan\Desktop\SOP\DDFootwear\BBL\bin\Debug\DAL.dll
+C:\Users\Tharindu Lakshan\Desktop\SOP\DDFootwear\BBL\bin\Debug\DAL.pdb
+C:\Users\Tharindu Lakshan\Desktop\SOP\DDFootwear\BBL\obj\Debug\BBL.csprojResolveAssemblyReference.cache
+C:\Users\Tharindu Lakshan\Desktop\SOP\DDFootwear\BBL\obj\Debug\BBL.dll
+C:\Users\Tharindu Lakshan\Desktop\SOP\DDFootwear\BBL\obj\Debug\BBL.pdb

@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="insertDiscount">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="disID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="disRate" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="insertDiscountResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="insertDiscountResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="deleteDiscount">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="disID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="deleteDiscountResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="deleteDiscountResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="updateDiscount">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="disID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="disRate" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="updateDiscountResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="updateDiscountResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="findSize">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="disID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="findSizeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="findSizeResult" type="tns:DiscountRates" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="DiscountRates">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="DisID" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="DisRate" type="s:double" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="viewAllSizes">
+        <s:complexType />
+      </s:element>
+      <s:element name="viewAllSizesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="viewAllSizesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="insertDiscountSoapIn">
+    <wsdl:part name="parameters" element="tns:insertDiscount" />
+  </wsdl:message>
+  <wsdl:message name="insertDiscountSoapOut">
+    <wsdl:part name="parameters" element="tns:insertDiscountResponse" />
+  </wsdl:message>
+  <wsdl:message name="deleteDiscountSoapIn">
+    <wsdl:part name="parameters" element="tns:deleteDiscount" />
+  </wsdl:message>
+  <wsdl:message name="deleteDiscountSoapOut">
+    <wsdl:part name="parameters" element="tns:deleteDiscountResponse" />
+  </wsdl:message>
+  <wsdl:message name="updateDiscountSoapIn">
+    <wsdl:part name="parameters" element="tns:updateDiscount" />
+  </wsdl:message>
+  <wsdl:message name="updateDiscountSoapOut">
+    <wsdl:part name="parameters" element="tns:updateDiscountResponse" />
+  </wsdl:message>
+  <wsdl:message name="findSizeSoapIn">
+    <wsdl:part name="parameters" element="tns:findSize" />
+  </wsdl:message>
+  <wsdl:message name="findSizeSoapOut">
+    <wsdl:part name="parameters" element="tns:findSizeResponse" />
+  </wsdl:message>
+  <wsdl:message name="viewAllSizesSoapIn">
+    <wsdl:part name="parameters" element="tns:viewAllSizes" />
+  </wsdl:message>
+  <wsdl:message name="viewAllSizesSoapOut">
+    <wsdl:part name="parameters" element="tns:viewAllSizesResponse" />
+  </wsdl:message>
+  <wsdl:portType name="DiscountServiceSoap">
+    <wsdl:operation name="insertDiscount">
+      <wsdl:input message="tns:insertDiscountSoapIn" />
+      <wsdl:output message="tns:insertDiscountSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteDiscount">
+      <wsdl:input message="tns:deleteDiscountSoapIn" />
+      <wsdl:output message="tns:deleteDiscountSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="updateDiscount">
+      <wsdl:input message="tns:updateDiscountSoapIn" />
+      <wsdl:output message="tns:updateDiscountSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="findSize">
+      <wsdl:input message="tns:findSizeSoapIn" />
+      <wsdl:output message="tns:findSizeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="viewAllSizes">
+      <wsdl:input message="tns:viewAllSizesSoapIn" />
+      <wsdl:output message="tns:viewAllSizesSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="DiscountServiceSoap" type="tns:DiscountServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="insertDiscount">
+      <soap:operation soapAction="http://tempuri.org/insertDiscount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteDiscount">
+      <soap:operation soapAction="http://tempuri.org/deleteDiscount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateDiscount">
+      <soap:operation soapAction="http://tempuri.org/updateDiscount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="findSize">
+      <soap:operation soapAction="http://tempuri.org/findSize" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="viewAllSizes">
+      <soap:operation soapAction="http://tempuri.org/viewAllSizes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="DiscountServiceSoap12" type="tns:DiscountServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="insertDiscount">
+      <soap12:operation soapAction="http://tempuri.org/insertDiscount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteDiscount">
+      <soap12:operation soapAction="http://tempuri.org/deleteDiscount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateDiscount">
+      <soap12:operation soapAction="http://tempuri.org/updateDiscount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="findSize">
+      <soap12:operation soapAction="http://tempuri.org/findSize" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="viewAllSizes">
+      <soap12:operation soapAction="http://tempuri.org/viewAllSizes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DiscountService">
+    <wsdl:port name="DiscountServiceSoap" binding="tns:DiscountServiceSoap">
+      <soap:address location="http://localhost:63251/DiscountService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="DiscountServiceSoap12" binding="tns:DiscountServiceSoap12">
+      <soap12:address location="http://localhost:63251/DiscountService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

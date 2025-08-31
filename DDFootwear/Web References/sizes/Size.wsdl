@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="insertSize">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="sID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="sNum" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="insertSizeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="insertSizeResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="deleteSize">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="sID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="deleteSizeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="deleteSizeResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="updateUser">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="sID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="sNum" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="updateUserResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="updateUserResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="findSize">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="sID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="findSizeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="findSizeResult" type="tns:Size" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Size">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="SizeID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="SizeNum" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="viewAllSizes">
+        <s:complexType />
+      </s:element>
+      <s:element name="viewAllSizesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="viewAllSizesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="insertSizeSoapIn">
+    <wsdl:part name="parameters" element="tns:insertSize" />
+  </wsdl:message>
+  <wsdl:message name="insertSizeSoapOut">
+    <wsdl:part name="parameters" element="tns:insertSizeResponse" />
+  </wsdl:message>
+  <wsdl:message name="deleteSizeSoapIn">
+    <wsdl:part name="parameters" element="tns:deleteSize" />
+  </wsdl:message>
+  <wsdl:message name="deleteSizeSoapOut">
+    <wsdl:part name="parameters" element="tns:deleteSizeResponse" />
+  </wsdl:message>
+  <wsdl:message name="updateUserSoapIn">
+    <wsdl:part name="parameters" element="tns:updateUser" />
+  </wsdl:message>
+  <wsdl:message name="updateUserSoapOut">
+    <wsdl:part name="parameters" element="tns:updateUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="findSizeSoapIn">
+    <wsdl:part name="parameters" element="tns:findSize" />
+  </wsdl:message>
+  <wsdl:message name="findSizeSoapOut">
+    <wsdl:part name="parameters" element="tns:findSizeResponse" />
+  </wsdl:message>
+  <wsdl:message name="viewAllSizesSoapIn">
+    <wsdl:part name="parameters" element="tns:viewAllSizes" />
+  </wsdl:message>
+  <wsdl:message name="viewAllSizesSoapOut">
+    <wsdl:part name="parameters" element="tns:viewAllSizesResponse" />
+  </wsdl:message>
+  <wsdl:portType name="SizeSoap">
+    <wsdl:operation name="insertSize">
+      <wsdl:input message="tns:insertSizeSoapIn" />
+      <wsdl:output message="tns:insertSizeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteSize">
+      <wsdl:input message="tns:deleteSizeSoapIn" />
+      <wsdl:output message="tns:deleteSizeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="updateUser">
+      <wsdl:input message="tns:updateUserSoapIn" />
+      <wsdl:output message="tns:updateUserSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="findSize">
+      <wsdl:input message="tns:findSizeSoapIn" />
+      <wsdl:output message="tns:findSizeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="viewAllSizes">
+      <wsdl:input message="tns:viewAllSizesSoapIn" />
+      <wsdl:output message="tns:viewAllSizesSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SizeSoap" type="tns:SizeSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="insertSize">
+      <soap:operation soapAction="http://tempuri.org/insertSize" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteSize">
+      <soap:operation soapAction="http://tempuri.org/deleteSize" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateUser">
+      <soap:operation soapAction="http://tempuri.org/updateUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="findSize">
+      <soap:operation soapAction="http://tempuri.org/findSize" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="viewAllSizes">
+      <soap:operation soapAction="http://tempuri.org/viewAllSizes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SizeSoap12" type="tns:SizeSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="insertSize">
+      <soap12:operation soapAction="http://tempuri.org/insertSize" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteSize">
+      <soap12:operation soapAction="http://tempuri.org/deleteSize" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateUser">
+      <soap12:operation soapAction="http://tempuri.org/updateUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="findSize">
+      <soap12:operation soapAction="http://tempuri.org/findSize" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="viewAllSizes">
+      <soap12:operation soapAction="http://tempuri.org/viewAllSizes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Size">
+    <wsdl:port name="SizeSoap" binding="tns:SizeSoap">
+      <soap:address location="http://localhost:63251/Size.asmx" />
+    </wsdl:port>
+    <wsdl:port name="SizeSoap12" binding="tns:SizeSoap12">
+      <soap12:address location="http://localhost:63251/Size.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

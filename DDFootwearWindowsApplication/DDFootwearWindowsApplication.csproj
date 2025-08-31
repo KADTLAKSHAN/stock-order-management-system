@@ -1,0 +1,389 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4C24D987-9C5B-4E8E-B852-11119ADB3157}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DDFootwearWindowsApplication</RootNamespace>
+    <AssemblyName>DDFootwearWindowsApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>\\DESKTOP-NBN8MLG\Users\Tharindu Lakshan\Desktop\Deployment Application\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>\\DESKTOP-NBN8MLG\Users\Tharindu Lakshan\Desktop\Deployment Application\</InstallUrl>
+    <UpdateUrl>\\DESKTOP-NBN8MLG\Users\Tharindu Lakshan\Desktop\Deployment Application\</UpdateUrl>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>138324831544F8A9AEB9BCE45E490AA9BF67067E</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>DDFootwearWindowsApplication_2_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CheckDDMainStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckDDMainStock.Designer.cs">
+      <DependentUpon>CheckDDMainStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckOrder.Designer.cs">
+      <DependentUpon>CheckOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DB_DD_FootwearDataSet.cs">
+      <DependentUpon>DB_DD_FootwearDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_DD_FootwearDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_DD_FootwearDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_DD_FootwearDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_DD_FootwearDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_DD_FootwearDataSetOrder.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_DD_FootwearDataSetOrder.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_DD_FootwearDataSetOutletStock.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_DD_FootwearDataSetOutletStock.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_DD_FootwearDataSetPartnerStock.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_DD_FootwearDataSetPartnerStock.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageOrders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageOrders.Designer.cs">
+      <DependentUpon>ManageOrders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Order.Designer.cs">
+      <DependentUpon>Order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OutletMenucs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OutletMenucs.Designer.cs">
+      <DependentUpon>OutletMenucs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OutletStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OutletStock.Designer.cs">
+      <DependentUpon>OutletStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PartnerStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PartnerStock.Designer.cs">
+      <DependentUpon>PartnerStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Web References\order\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\product\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\user\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CheckDDMainStock.resx">
+      <DependentUpon>CheckDDMainStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckOrder.resx">
+      <DependentUpon>CheckOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageOrders.resx">
+      <DependentUpon>ManageOrders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order.resx">
+      <DependentUpon>Order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OutletMenucs.resx">
+      <DependentUpon>OutletMenucs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OutletStock.resx">
+      <DependentUpon>OutletStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PartnerStock.resx">
+      <DependentUpon>PartnerStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="DB_DD_FootwearDataSet.xsc">
+      <DependentUpon>DB_DD_FootwearDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DB_DD_FootwearDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_DD_FootwearDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_DD_FootwearDataSet.xss">
+      <DependentUpon>DB_DD_FootwearDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DB_DD_FootwearDataSet1.xsc">
+      <DependentUpon>DB_DD_FootwearDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DB_DD_FootwearDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_DD_FootwearDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_DD_FootwearDataSet1.xss">
+      <DependentUpon>DB_DD_FootwearDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DB_DD_FootwearDataSetOrder.xsc">
+      <DependentUpon>DB_DD_FootwearDataSetOrder.xsd</DependentUpon>
+    </None>
+    <None Include="DB_DD_FootwearDataSetOrder.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_DD_FootwearDataSetOrder.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_DD_FootwearDataSetOrder.xss">
+      <DependentUpon>DB_DD_FootwearDataSetOrder.xsd</DependentUpon>
+    </None>
+    <None Include="DB_DD_FootwearDataSetOutletStock.xsc">
+      <DependentUpon>DB_DD_FootwearDataSetOutletStock.xsd</DependentUpon>
+    </None>
+    <None Include="DB_DD_FootwearDataSetOutletStock.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_DD_FootwearDataSetOutletStock.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_DD_FootwearDataSetOutletStock.xss">
+      <DependentUpon>DB_DD_FootwearDataSetOutletStock.xsd</DependentUpon>
+    </None>
+    <None Include="DB_DD_FootwearDataSetPartnerStock.xsc">
+      <DependentUpon>DB_DD_FootwearDataSetPartnerStock.xsd</DependentUpon>
+    </None>
+    <None Include="DB_DD_FootwearDataSetPartnerStock.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_DD_FootwearDataSetPartnerStock.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_DD_FootwearDataSetPartnerStock.xss">
+      <DependentUpon>DB_DD_FootwearDataSetPartnerStock.xsd</DependentUpon>
+    </None>
+    <None Include="DDFootwearWindowsApplication_1_TemporaryKey.pfx" />
+    <None Include="DDFootwearWindowsApplication_2_TemporaryKey.pfx" />
+    <None Include="DDFootwearWindowsApplication_TemporaryKey.pfx" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Web References\order\OrdersServices.wsdl" />
+    <None Include="Web References\order\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\product\Product.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\product\ProductService.wsdl" />
+    <None Include="Web References\product\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\user\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\user\User.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\user\Userservices.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\Background.png" />
+    <Content Include="Images\boots.png" />
+    <None Include="Web References\order\OrdersServices.disco" />
+    <None Include="Web References\user\Userservices.disco" />
+    <None Include="Web References\product\ProductService.disco" />
+    <None Include="Resources\Background.png" />
+    <None Include="Resources\boots.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BBL\BBL.csproj">
+      <Project>{635b7919-4c8d-4db9-a59c-1bc36dca2d5a}</Project>
+      <Name>BBL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{dd070894-b48f-449b-84e8-d96c0eee17a5}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://localhost:63251/OrdersServices.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\order\</RelPath>
+      <UpdateFromURL>http://localhost:63251/OrdersServices.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>DDFootwearWindowsApplication_order_OrdersServices</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost:63251/ProductService.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\product\</RelPath>
+      <UpdateFromURL>http://localhost:63251/ProductService.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>DDFootwearWindowsApplication_product_ProductService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost:63251/Userservices.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\user\</RelPath>
+      <UpdateFromURL>http://localhost:63251/Userservices.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>DDFootwearWindowsApplication_user_Userservices</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
